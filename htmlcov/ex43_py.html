@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for ex43.py: 0%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>ex43.py</b> :
+            <span class="pc_cov">0%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <h2 class="stats">
+            91 statements &nbsp;
+            <span class="run shortkey_r button_toggle_run">0 run</span>
+            <span class="mis show_mis shortkey_m button_toggle_mis">91 missing</span>
+            <span class="exc show_exc shortkey_x button_toggle_exc">0 excluded</span>
+        </h2>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+<div id="source">
+    <p id="t1" class="mis show_mis"><span class="n"><a href="#t1">1</a></span><span class="t"><span class="key">from</span> <span class="nam">sys</span> <span class="key">import</span> <span class="nam">exit</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t2" class="mis show_mis"><span class="n"><a href="#t2">2</a></span><span class="t"><span class="key">from</span> <span class="nam">random</span> <span class="key">import</span> <span class="nam">randint</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t3" class="mis show_mis"><span class="n"><a href="#t3">3</a></span><span class="t"><span class="key">from</span> <span class="nam">textwrap</span> <span class="key">import</span> <span class="nam">dedent</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t4" class="pln"><span class="n"><a href="#t4">4</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t5" class="mis show_mis"><span class="n"><a href="#t5">5</a></span><span class="t"><span class="key">class</span> <span class="nam">Scene</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t6" class="mis show_mis"><span class="n"><a href="#t6">6</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t7" class="mis show_mis"><span class="n"><a href="#t7">7</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"This scene is not yet configured."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t8" class="mis show_mis"><span class="n"><a href="#t8">8</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"Subclass it and implement enter()."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t9" class="mis show_mis"><span class="n"><a href="#t9">9</a></span><span class="t">        <span class="nam">exit</span><span class="op">(</span><span class="num">1</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="pln"><span class="n"><a href="#t10">10</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t11" class="mis show_mis"><span class="n"><a href="#t11">11</a></span><span class="t"><span class="key">class</span> <span class="nam">Engine</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="mis show_mis"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">scene_map</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="mis show_mis"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">scene_map</span> <span class="op">=</span> <span class="nam">scene_map</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t14" class="pln"><span class="n"><a href="#t14">14</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="mis show_mis"><span class="n"><a href="#t15">15</a></span><span class="t">    <span class="key">def</span> <span class="nam">play</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="mis show_mis"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="nam">current_scene</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">scene_map</span><span class="op">.</span><span class="nam">opening_scene</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t17" class="mis show_mis"><span class="n"><a href="#t17">17</a></span><span class="t">        <span class="nam">last_scene</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">scene_map</span><span class="op">.</span><span class="nam">next_scene</span><span class="op">(</span><span class="str">'finished'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t18" class="pln"><span class="n"><a href="#t18">18</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t19" class="mis show_mis"><span class="n"><a href="#t19">19</a></span><span class="t">        <span class="key">while</span> <span class="nam">current_scene</span> <span class="op">!=</span> <span class="nam">last_scene</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="mis show_mis"><span class="n"><a href="#t20">20</a></span><span class="t">            <span class="nam">next_scene_name</span> <span class="op">=</span> <span class="nam">current_scene</span><span class="op">.</span><span class="nam">enter</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t21" class="mis show_mis"><span class="n"><a href="#t21">21</a></span><span class="t">            <span class="nam">current_scene</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">scene_map</span><span class="op">.</span><span class="nam">next_scene</span><span class="op">(</span><span class="nam">next_scene_name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t22" class="pln"><span class="n"><a href="#t22">22</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t23" class="pln"><span class="n"><a href="#t23">23</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t24" class="pln"><span class="n"><a href="#t24">24</a></span><span class="t">            <span class="com"># be sure to print out the last scene</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t25" class="mis show_mis"><span class="n"><a href="#t25">25</a></span><span class="t">        <span class="nam">current_scene</span><span class="op">.</span><span class="nam">enter</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t26" class="pln"><span class="n"><a href="#t26">26</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t27" class="mis show_mis"><span class="n"><a href="#t27">27</a></span><span class="t"><span class="key">class</span> <span class="nam">Death</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t28" class="mis show_mis"><span class="n"><a href="#t28">28</a></span><span class="t">    <span class="nam">quips</span> <span class="op">=</span> <span class="op">[</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t29" class="pln"><span class="n"><a href="#t29">29</a></span><span class="t">        <span class="str">"You died. You kinda suck at this."</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t30" class="pln"><span class="n"><a href="#t30">30</a></span><span class="t">        <span class="str">"Your Mom would be proud...if she were smarter."</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t31" class="pln"><span class="n"><a href="#t31">31</a></span><span class="t">        <span class="str">"Such a luser."</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t32" class="pln"><span class="n"><a href="#t32">32</a></span><span class="t">        <span class="str">"I have a small puppy that's better at this."</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t33" class="pln"><span class="n"><a href="#t33">33</a></span><span class="t">        <span class="str">"You're worse than your Dad's jokes."</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t34" class="pln"><span class="n"><a href="#t34">34</a></span><span class="t">    <span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t35" class="pln"><span class="n"><a href="#t35">35</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t36" class="mis show_mis"><span class="n"><a href="#t36">36</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t37" class="mis show_mis"><span class="n"><a href="#t37">37</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="nam">Death</span><span class="op">.</span><span class="nam">quips</span><span class="op">[</span><span class="nam">randint</span><span class="op">(</span><span class="num">0</span><span class="op">,</span> <span class="nam">len</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">quips</span><span class="op">)</span><span class="op">-</span><span class="num">1</span><span class="op">)</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t38" class="mis show_mis"><span class="n"><a href="#t38">38</a></span><span class="t">        <span class="nam">exit</span><span class="op">(</span><span class="num">1</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t39" class="pln"><span class="n"><a href="#t39">39</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t40" class="mis show_mis"><span class="n"><a href="#t40">40</a></span><span class="t"><span class="key">class</span> <span class="nam">CentralCorridor</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t41" class="mis show_mis"><span class="n"><a href="#t41">41</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t42" class="mis show_mis"><span class="n"><a href="#t42">42</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t43" class="pln"><span class="n"><a href="#t43">43</a></span><span class="t"><span class="str">        The Gothons of Planet Percal #25 have invaded your ship and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t44" class="pln"><span class="n"><a href="#t44">44</a></span><span class="t"><span class="str">        destroyed your entire crew. You are the last surviving</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t45" class="pln"><span class="n"><a href="#t45">45</a></span><span class="t"><span class="str">        member and your last mission is to get the neutron destruct</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t46" class="pln"><span class="n"><a href="#t46">46</a></span><span class="t"><span class="str">        bomb from the Weapons Armory, put it in the bridge, and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t47" class="pln"><span class="n"><a href="#t47">47</a></span><span class="t"><span class="str">        blow the ship up after getting into an escape pod.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t48" class="pln"><span class="n"><a href="#t48">48</a></span><span class="t"><span class="str">        You're running down the central corridor to the Weapons</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t49" class="pln"><span class="n"><a href="#t49">49</a></span><span class="t"><span class="str">        Armory when a Gothon jumps out, red scaly skin, dark grimy</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t50" class="pln"><span class="n"><a href="#t50">50</a></span><span class="t"><span class="str">        teeth, and evil clown costume flowing around his hate</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t51" class="pln"><span class="n"><a href="#t51">51</a></span><span class="t"><span class="str">        filled body. He's blocking the door to the Armory and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t52" class="pln"><span class="n"><a href="#t52">52</a></span><span class="t"><span class="str">        about to pull a weapon to blast you.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="pln"><span class="n"><a href="#t53">53</a></span><span class="t"><span class="str">        """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="pln"><span class="n"><a href="#t54">54</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t55" class="mis show_mis"><span class="n"><a href="#t55">55</a></span><span class="t">        <span class="nam">action</span> <span class="op">=</span> <span class="nam">input</span><span class="op">(</span><span class="str">"> "</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="pln"><span class="n"><a href="#t56">56</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="mis show_mis"><span class="n"><a href="#t57">57</a></span><span class="t">        <span class="key">if</span> <span class="nam">action</span> <span class="op">==</span> <span class="str">"shoot!"</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="pln"><span class="n"><a href="#t58">58</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="mis show_mis"><span class="n"><a href="#t59">59</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="pln"><span class="n"><a href="#t60">60</a></span><span class="t"><span class="str">            Quick on the draw you yank out your blaster and fire</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="pln"><span class="n"><a href="#t61">61</a></span><span class="t"><span class="str">            it at the Gothon. His clown costume is flowing and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t"><span class="str">            moving around his body, which throws off your aim.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t63" class="pln"><span class="n"><a href="#t63">63</a></span><span class="t"><span class="str">            Your laser hits his costume but misses him entirely.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t64" class="pln"><span class="n"><a href="#t64">64</a></span><span class="t"><span class="str">            This completely ruins his brand new costume his mother</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t65" class="pln"><span class="n"><a href="#t65">65</a></span><span class="t"><span class="str">            bought him, which makes him fly into an insane rage</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t66" class="pln"><span class="n"><a href="#t66">66</a></span><span class="t"><span class="str">            and blast you repeatedly in the face until you are</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t67" class="pln"><span class="n"><a href="#t67">67</a></span><span class="t"><span class="str">            dead. Then he eats you.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t68" class="pln"><span class="n"><a href="#t68">68</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t69" class="pln"><span class="n"><a href="#t69">69</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t70" class="mis show_mis"><span class="n"><a href="#t70">70</a></span><span class="t">            <span class="key">return</span> <span class="str">'death'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t71" class="mis show_mis"><span class="n"><a href="#t71">71</a></span><span class="t">        <span class="key">elif</span> <span class="nam">action</span> <span class="op">==</span> <span class="str">"dodge!"</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t72" class="mis show_mis"><span class="n"><a href="#t72">72</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t73" class="pln"><span class="n"><a href="#t73">73</a></span><span class="t"><span class="str">            Like a world class boxer you dodge, weave, slip and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t74" class="pln"><span class="n"><a href="#t74">74</a></span><span class="t"><span class="str">            slide right as the Gothon's blaster cranks a laser</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t75" class="pln"><span class="n"><a href="#t75">75</a></span><span class="t"><span class="str">            past your head. In the middle of your artful dodge</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t76" class="pln"><span class="n"><a href="#t76">76</a></span><span class="t"><span class="str">            your foot slips and you bang your head on the metal</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t77" class="pln"><span class="n"><a href="#t77">77</a></span><span class="t"><span class="str">            wall and pass out. You wake up shortly after only to</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t78" class="pln"><span class="n"><a href="#t78">78</a></span><span class="t"><span class="str">            die as the Gothon stomps on your head and eats you.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t79" class="pln"><span class="n"><a href="#t79">79</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t81" class="mis show_mis"><span class="n"><a href="#t81">81</a></span><span class="t">            <span class="key">return</span> <span class="str">'death'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t82" class="mis show_mis"><span class="n"><a href="#t82">82</a></span><span class="t">        <span class="key">elif</span> <span class="nam">action</span> <span class="op">==</span> <span class="str">"tell a joke"</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t83" class="mis show_mis"><span class="n"><a href="#t83">83</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t84" class="pln"><span class="n"><a href="#t84">84</a></span><span class="t"><span class="str">            Lucky for you they made you learn Gothon insults in</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t85" class="pln"><span class="n"><a href="#t85">85</a></span><span class="t"><span class="str">            the academy. You tell the one Gothon joke you know:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t86" class="pln"><span class="n"><a href="#t86">86</a></span><span class="t"><span class="str">            Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t87" class="pln"><span class="n"><a href="#t87">87</a></span><span class="t"><span class="str">            fur fvgf nebhaq gur ubhfr. The Gothon stops, tries</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t88" class="pln"><span class="n"><a href="#t88">88</a></span><span class="t"><span class="str">            not to laugh, then busts out laughing and can't move.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t89" class="pln"><span class="n"><a href="#t89">89</a></span><span class="t"><span class="str">            While he's laughing you run up and shoot him square in</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="pln"><span class="n"><a href="#t90">90</a></span><span class="t"><span class="str">            the head putting him down, then jump through the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t91" class="pln"><span class="n"><a href="#t91">91</a></span><span class="t"><span class="str">            Weapon Armory door.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t92" class="pln"><span class="n"><a href="#t92">92</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="pln"><span class="n"><a href="#t93">93</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t94" class="mis show_mis"><span class="n"><a href="#t94">94</a></span><span class="t">            <span class="key">return</span> <span class="str">'laser_weapon_armory'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t95" class="pln"><span class="n"><a href="#t95">95</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t96" class="pln"><span class="n"><a href="#t96">96</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t97" class="mis show_mis"><span class="n"><a href="#t97">97</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="str">"DOES NOT COMPUTE!"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t98" class="mis show_mis"><span class="n"><a href="#t98">98</a></span><span class="t">            <span class="key">return</span> <span class="str">'central_corridor'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t99" class="pln"><span class="n"><a href="#t99">99</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t100" class="pln"><span class="n"><a href="#t100">100</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t101" class="mis show_mis"><span class="n"><a href="#t101">101</a></span><span class="t"><span class="key">class</span> <span class="nam">LaserWeaponArmory</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t102" class="mis show_mis"><span class="n"><a href="#t102">102</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t103" class="mis show_mis"><span class="n"><a href="#t103">103</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t104" class="pln"><span class="n"><a href="#t104">104</a></span><span class="t"><span class="str">        You do a dive roll into the Weapon Armory, crouch and scan</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t105" class="pln"><span class="n"><a href="#t105">105</a></span><span class="t"><span class="str">        the room for more Gothons that might be hiding. It's dead</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t106" class="pln"><span class="n"><a href="#t106">106</a></span><span class="t"><span class="str">        quiet, too quiet. You stand up and run to the far side of</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t107" class="pln"><span class="n"><a href="#t107">107</a></span><span class="t"><span class="str">        the room and find the neutron bomb in its container.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t108" class="pln"><span class="n"><a href="#t108">108</a></span><span class="t"><span class="str">        There's a keypad lock on the box and you need the code to</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t109" class="pln"><span class="n"><a href="#t109">109</a></span><span class="t"><span class="str">        get the bomb out. If you get the code wrong 10 times then</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t110" class="pln"><span class="n"><a href="#t110">110</a></span><span class="t"><span class="str">        the lock closes forever and you can't get the bomb. The</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t111" class="pln"><span class="n"><a href="#t111">111</a></span><span class="t"><span class="str">        code is 3 digits.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t112" class="pln"><span class="n"><a href="#t112">112</a></span><span class="t"><span class="str">        """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t113" class="pln"><span class="n"><a href="#t113">113</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t114" class="mis show_mis"><span class="n"><a href="#t114">114</a></span><span class="t">        <span class="nam">code</span> <span class="op">=</span> <span class="str">f"{randint(1,9)}{randint(1,9)}{randint(1,9)}"</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t115" class="mis show_mis"><span class="n"><a href="#t115">115</a></span><span class="t">        <span class="nam">guess</span> <span class="op">=</span> <span class="nam">input</span><span class="op">(</span><span class="str">"[keypad]> "</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t116" class="mis show_mis"><span class="n"><a href="#t116">116</a></span><span class="t">        <span class="nam">guesses</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t117" class="pln"><span class="n"><a href="#t117">117</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t118" class="mis show_mis"><span class="n"><a href="#t118">118</a></span><span class="t">        <span class="key">while</span> <span class="nam">guess</span> <span class="op">!=</span> <span class="nam">code</span> <span class="key">and</span> <span class="nam">guesses</span> <span class="op">&lt;</span> <span class="num">10</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t119" class="pln"><span class="n"><a href="#t119">119</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t120" class="mis show_mis"><span class="n"><a href="#t120">120</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="str">"BZZZZEDDD!"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t121" class="mis show_mis"><span class="n"><a href="#t121">121</a></span><span class="t">            <span class="nam">guesses</span> <span class="op">+=</span> <span class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t122" class="mis show_mis"><span class="n"><a href="#t122">122</a></span><span class="t">            <span class="nam">guess</span> <span class="op">=</span> <span class="nam">input</span><span class="op">(</span><span class="str">"[keypad]> "</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t123" class="pln"><span class="n"><a href="#t123">123</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t124" class="mis show_mis"><span class="n"><a href="#t124">124</a></span><span class="t">        <span class="key">if</span> <span class="nam">guess</span> <span class="op">==</span> <span class="nam">code</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t125" class="mis show_mis"><span class="n"><a href="#t125">125</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t126" class="pln"><span class="n"><a href="#t126">126</a></span><span class="t"><span class="str">            The container clicks open and the seal breaks, letting</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t127" class="pln"><span class="n"><a href="#t127">127</a></span><span class="t"><span class="str">            gas out. You grab the neutron bomb and run as fast as</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t128" class="pln"><span class="n"><a href="#t128">128</a></span><span class="t"><span class="str">            you can to the bridge where you must place it in the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t129" class="pln"><span class="n"><a href="#t129">129</a></span><span class="t"><span class="str">            right spot.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t130" class="pln"><span class="n"><a href="#t130">130</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t131" class="mis show_mis"><span class="n"><a href="#t131">131</a></span><span class="t">            <span class="key">return</span> <span class="str">'the_bridge'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t132" class="pln"><span class="n"><a href="#t132">132</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t133" class="mis show_mis"><span class="n"><a href="#t133">133</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t134" class="pln"><span class="n"><a href="#t134">134</a></span><span class="t"><span class="str">            The lock buzzes one last time and then you hear a</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t135" class="pln"><span class="n"><a href="#t135">135</a></span><span class="t"><span class="str">            sickening melting sound as the mechanism is fused</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t136" class="pln"><span class="n"><a href="#t136">136</a></span><span class="t"><span class="str">            together. You decide to sit there, and finally the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t137" class="pln"><span class="n"><a href="#t137">137</a></span><span class="t"><span class="str">            Gothons blow up the ship from their ship and you die.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t138" class="pln"><span class="n"><a href="#t138">138</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t139" class="mis show_mis"><span class="n"><a href="#t139">139</a></span><span class="t">            <span class="key">return</span> <span class="str">'death'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t140" class="pln"><span class="n"><a href="#t140">140</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t141" class="pln"><span class="n"><a href="#t141">141</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t142" class="mis show_mis"><span class="n"><a href="#t142">142</a></span><span class="t"><span class="key">class</span> <span class="nam">TheBridge</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t143" class="mis show_mis"><span class="n"><a href="#t143">143</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t144" class="mis show_mis"><span class="n"><a href="#t144">144</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t145" class="pln"><span class="n"><a href="#t145">145</a></span><span class="t"><span class="str">        You burst onto the Bridge with the netron destruct bomb</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t146" class="pln"><span class="n"><a href="#t146">146</a></span><span class="t"><span class="str">        under your arm and surprise 5 Gothons who are trying to</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t147" class="pln"><span class="n"><a href="#t147">147</a></span><span class="t"><span class="str">        take control of the ship. Each of them has an even uglier</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t148" class="pln"><span class="n"><a href="#t148">148</a></span><span class="t"><span class="str">        clown costume than the last. They haven't pulled their</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t149" class="pln"><span class="n"><a href="#t149">149</a></span><span class="t"><span class="str">        weapons out yet, as they see the active bomb under your</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t150" class="pln"><span class="n"><a href="#t150">150</a></span><span class="t"><span class="str">        arm and don't want to set it off.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t151" class="pln"><span class="n"><a href="#t151">151</a></span><span class="t"><span class="str">        """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t152" class="pln"><span class="n"><a href="#t152">152</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t153" class="mis show_mis"><span class="n"><a href="#t153">153</a></span><span class="t">        <span class="nam">action</span> <span class="op">=</span> <span class="nam">input</span><span class="op">(</span><span class="str">"> "</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t154" class="pln"><span class="n"><a href="#t154">154</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t155" class="mis show_mis"><span class="n"><a href="#t155">155</a></span><span class="t">        <span class="key">if</span> <span class="nam">action</span> <span class="op">==</span> <span class="str">"throw the bomb"</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t156" class="mis show_mis"><span class="n"><a href="#t156">156</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t157" class="pln"><span class="n"><a href="#t157">157</a></span><span class="t"><span class="str">            In a panic you throw the bomb at the group of Gothons</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t158" class="pln"><span class="n"><a href="#t158">158</a></span><span class="t"><span class="str">            and make a leap for the door. Right as you drop it a</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t159" class="pln"><span class="n"><a href="#t159">159</a></span><span class="t"><span class="str">            Gothon shoots you right in the back killing you. As</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t160" class="pln"><span class="n"><a href="#t160">160</a></span><span class="t"><span class="str">            you die you see another Gothon frantically try to</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t161" class="pln"><span class="n"><a href="#t161">161</a></span><span class="t"><span class="str">            disarm the bomb. You die knowing they will probably</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t162" class="pln"><span class="n"><a href="#t162">162</a></span><span class="t"><span class="str">            blow up when it goes off.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t163" class="pln"><span class="n"><a href="#t163">163</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t164" class="mis show_mis"><span class="n"><a href="#t164">164</a></span><span class="t">            <span class="key">return</span> <span class="str">'death'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t165" class="mis show_mis"><span class="n"><a href="#t165">165</a></span><span class="t">        <span class="key">elif</span> <span class="nam">action</span> <span class="op">==</span> <span class="str">"slowly place the bomb"</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t166" class="mis show_mis"><span class="n"><a href="#t166">166</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t167" class="pln"><span class="n"><a href="#t167">167</a></span><span class="t"><span class="str">            You point your blaster at the bomb under your arm and</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t168" class="pln"><span class="n"><a href="#t168">168</a></span><span class="t"><span class="str">            the Gothons put their hands up and start to sweat.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t169" class="pln"><span class="n"><a href="#t169">169</a></span><span class="t"><span class="str">            You inch backward to the door, open it, and then</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t170" class="pln"><span class="n"><a href="#t170">170</a></span><span class="t"><span class="str">            carefully place the bomb on the floor, pointing your</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t171" class="pln"><span class="n"><a href="#t171">171</a></span><span class="t"><span class="str">            blaster at it. You then jump back through the door,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t172" class="pln"><span class="n"><a href="#t172">172</a></span><span class="t"><span class="str">            punch the close button and blast the lock so the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t173" class="pln"><span class="n"><a href="#t173">173</a></span><span class="t"><span class="str">            Gothons can't get out. Now that the bomb is placed</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t174" class="pln"><span class="n"><a href="#t174">174</a></span><span class="t"><span class="str">            you run to the escape pod to get off this tin can.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t175" class="pln"><span class="n"><a href="#t175">175</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t176" class="pln"><span class="n"><a href="#t176">176</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t177" class="mis show_mis"><span class="n"><a href="#t177">177</a></span><span class="t">            <span class="key">return</span> <span class="str">'escape_pod'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t178" class="pln"><span class="n"><a href="#t178">178</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t179" class="mis show_mis"><span class="n"><a href="#t179">179</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="str">"DOES NOT COMPUTE!"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t180" class="mis show_mis"><span class="n"><a href="#t180">180</a></span><span class="t">            <span class="key">return</span> <span class="str">"the_bridge"</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t181" class="pln"><span class="n"><a href="#t181">181</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t182" class="mis show_mis"><span class="n"><a href="#t182">182</a></span><span class="t"><span class="key">class</span> <span class="nam">EscapePod</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t183" class="mis show_mis"><span class="n"><a href="#t183">183</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t184" class="mis show_mis"><span class="n"><a href="#t184">184</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t185" class="pln"><span class="n"><a href="#t185">185</a></span><span class="t"><span class="str">        You rush through the ship desperately trying to make it to</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t186" class="pln"><span class="n"><a href="#t186">186</a></span><span class="t"><span class="str">        the escape pod before the whole ship explodes. It seems</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t187" class="pln"><span class="n"><a href="#t187">187</a></span><span class="t"><span class="str">        like hardly any Gothons are on the ship, so your run is</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t188" class="pln"><span class="n"><a href="#t188">188</a></span><span class="t"><span class="str">        clear of interference. You get to the chamber with the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t189" class="pln"><span class="n"><a href="#t189">189</a></span><span class="t"><span class="str">        escape pods, and now need to pick one to take. Some of</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t190" class="pln"><span class="n"><a href="#t190">190</a></span><span class="t"><span class="str">        them could be damaged but you don't have time to look.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t191" class="pln"><span class="n"><a href="#t191">191</a></span><span class="t"><span class="str">        There's 5 pods, which one do you take?</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t192" class="pln"><span class="n"><a href="#t192">192</a></span><span class="t"><span class="str">        """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t193" class="pln"><span class="n"><a href="#t193">193</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t194" class="mis show_mis"><span class="n"><a href="#t194">194</a></span><span class="t">        <span class="nam">good_pod</span> <span class="op">=</span> <span class="nam">randint</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">5</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t195" class="mis show_mis"><span class="n"><a href="#t195">195</a></span><span class="t">        <span class="nam">guess</span> <span class="op">=</span> <span class="nam">input</span><span class="op">(</span><span class="str">"[pod #]> "</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t196" class="pln"><span class="n"><a href="#t196">196</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t197" class="mis show_mis"><span class="n"><a href="#t197">197</a></span><span class="t">        <span class="key">if</span> <span class="nam">int</span><span class="op">(</span><span class="nam">guess</span><span class="op">)</span> <span class="op">!=</span> <span class="nam">good_pod</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t198" class="mis show_mis"><span class="n"><a href="#t198">198</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t199" class="pln"><span class="n"><a href="#t199">199</a></span><span class="t"><span class="str">            You jump into pod {guess} and hit the eject button.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t200" class="pln"><span class="n"><a href="#t200">200</a></span><span class="t"><span class="str">            The pod escapes out into the void of space, then</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t201" class="pln"><span class="n"><a href="#t201">201</a></span><span class="t"><span class="str">            implodes as the hull ruptures, crushing your body into</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t202" class="pln"><span class="n"><a href="#t202">202</a></span><span class="t"><span class="str">            jam jelly.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t203" class="pln"><span class="n"><a href="#t203">203</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t204" class="mis show_mis"><span class="n"><a href="#t204">204</a></span><span class="t">            <span class="key">return</span> <span class="str">'death'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t205" class="pln"><span class="n"><a href="#t205">205</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t206" class="mis show_mis"><span class="n"><a href="#t206">206</a></span><span class="t">            <span class="nam">print</span><span class="op">(</span><span class="nam">dedent</span><span class="op">(</span><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t207" class="pln"><span class="n"><a href="#t207">207</a></span><span class="t"><span class="str">            You jump into pod {guess} and hit the eject button.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t208" class="pln"><span class="n"><a href="#t208">208</a></span><span class="t"><span class="str">            The pod easily slides out into space heading to the</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t209" class="pln"><span class="n"><a href="#t209">209</a></span><span class="t"><span class="str">            planet below. As it flies to the planet, you look</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t210" class="pln"><span class="n"><a href="#t210">210</a></span><span class="t"><span class="str">            back and see your ship implode then explode like a</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t211" class="pln"><span class="n"><a href="#t211">211</a></span><span class="t"><span class="str">            bright star, taking out the Gothon ship at the same</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t212" class="pln"><span class="n"><a href="#t212">212</a></span><span class="t"><span class="str">            time. You won!</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t213" class="pln"><span class="n"><a href="#t213">213</a></span><span class="t"><span class="str">            """</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t214" class="pln"><span class="n"><a href="#t214">214</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t215" class="mis show_mis"><span class="n"><a href="#t215">215</a></span><span class="t">            <span class="key">return</span> <span class="str">'finished'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t216" class="pln"><span class="n"><a href="#t216">216</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t217" class="mis show_mis"><span class="n"><a href="#t217">217</a></span><span class="t"><span class="key">class</span> <span class="nam">Finished</span><span class="op">(</span><span class="nam">Scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t218" class="mis show_mis"><span class="n"><a href="#t218">218</a></span><span class="t">    <span class="key">def</span> <span class="nam">enter</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t219" class="mis show_mis"><span class="n"><a href="#t219">219</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"You won! Good job."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t220" class="mis show_mis"><span class="n"><a href="#t220">220</a></span><span class="t">        <span class="key">return</span> <span class="str">'finished'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t221" class="pln"><span class="n"><a href="#t221">221</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t222" class="mis show_mis"><span class="n"><a href="#t222">222</a></span><span class="t"><span class="key">class</span> <span class="nam">Map</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t223" class="mis show_mis"><span class="n"><a href="#t223">223</a></span><span class="t">    <span class="nam">scenes</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t224" class="pln"><span class="n"><a href="#t224">224</a></span><span class="t">        <span class="str">'central_corridor'</span><span class="op">:</span> <span class="nam">CentralCorridor</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t225" class="pln"><span class="n"><a href="#t225">225</a></span><span class="t">        <span class="str">'laser_weapon_armory'</span><span class="op">:</span> <span class="nam">LaserWeaponArmory</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t226" class="pln"><span class="n"><a href="#t226">226</a></span><span class="t">        <span class="str">'the_bridge'</span><span class="op">:</span> <span class="nam">TheBridge</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t227" class="pln"><span class="n"><a href="#t227">227</a></span><span class="t">        <span class="str">'escape_pod'</span><span class="op">:</span> <span class="nam">EscapePod</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t228" class="pln"><span class="n"><a href="#t228">228</a></span><span class="t">        <span class="str">'death'</span><span class="op">:</span> <span class="nam">Death</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t229" class="pln"><span class="n"><a href="#t229">229</a></span><span class="t">        <span class="str">'finished'</span><span class="op">:</span> <span class="nam">Finished</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t230" class="pln"><span class="n"><a href="#t230">230</a></span><span class="t">    <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t231" class="pln"><span class="n"><a href="#t231">231</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t232" class="mis show_mis"><span class="n"><a href="#t232">232</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">start_scene</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t233" class="mis show_mis"><span class="n"><a href="#t233">233</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">start_scene</span> <span class="op">=</span> <span class="nam">start_scene</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t234" class="pln"><span class="n"><a href="#t234">234</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t235" class="mis show_mis"><span class="n"><a href="#t235">235</a></span><span class="t">    <span class="key">def</span> <span class="nam">next_scene</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">scene_name</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t236" class="mis show_mis"><span class="n"><a href="#t236">236</a></span><span class="t">        <span class="nam">val</span> <span class="op">=</span> <span class="nam">Map</span><span class="op">.</span><span class="nam">scenes</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">scene_name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t237" class="mis show_mis"><span class="n"><a href="#t237">237</a></span><span class="t">        <span class="key">return</span> <span class="nam">val</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t238" class="pln"><span class="n"><a href="#t238">238</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t239" class="mis show_mis"><span class="n"><a href="#t239">239</a></span><span class="t">    <span class="key">def</span> <span class="nam">opening_scene</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t240" class="mis show_mis"><span class="n"><a href="#t240">240</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">next_scene</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">start_scene</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t241" class="pln"><span class="n"><a href="#t241">241</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t242" class="pln"><span class="n"><a href="#t242">242</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t243" class="pln"><span class="n"><a href="#t243">243</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t244" class="mis show_mis"><span class="n"><a href="#t244">244</a></span><span class="t"><span class="nam">a_map</span> <span class="op">=</span> <span class="nam">Map</span><span class="op">(</span><span class="str">'central_corridor'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t245" class="mis show_mis"><span class="n"><a href="#t245">245</a></span><span class="t"><span class="nam">a_game</span> <span class="op">=</span> <span class="nam">Engine</span><span class="op">(</span><span class="nam">a_map</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t246" class="mis show_mis"><span class="n"><a href="#t246">246</a></span><span class="t"><span class="nam">a_game</span><span class="op">.</span><span class="nam">play</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.0</a>,
+            created at 2019-12-18 16:09
+        </p>
+    </div>
+</div>
+</body>
+</html>
