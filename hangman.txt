@@ -1,0 +1,77 @@
+def hangman():
+
+    secret_word = get_secret_word()
+    print(secret_word)
+    l = len(secret_word)
+
+    in_list = []
+    wrong_list = []
+
+
+    while len(wrong_list) < 6:
+        
+        c = 0
+        for i in range (0, l):
+            if secret_word[i] in in_list:
+                c += 1
+
+            if c == l:
+                print(f"\n {secret_word} is the word\n ***You won***")
+                break
+
+        if c == l:
+            break
+
+
+        print("\n Word:\t",end="")
+        for i in range(0, l):
+
+            if secret_word[i] in in_list:
+                print(secret_word[i],end="")
+
+            else:
+                print("_",end="")
+
+        
+
+        print(f"\nGuessed:\t", end="")
+        print(" ".join(in_list))
+        
+
+        print("\nGuess:", end="")
+        in_letter = input()
+        if not in_letter.isalpha():
+            print("Invalid entry")
+            continue
+        if len(in_letter)>1:
+            print("Invalid entry")
+            continue
+
+        if in_letter not in secret_word:
+    
+            if in_letter not in in_list:
+                wrong_list.append(in_letter)
+                print("Wrong guess")
+
+            else:
+                print("Already guesed")
+
+        if in_letter not in in_list:
+            in_list.append(in_letter)
+        else:
+            print("Already guessed")
+
+        
+
+    if len(wrong_list)==6:
+        print("***You are dead***")
+
+    choice = True
+    c =input("\n One more game?(y/n)")
+    if c == 'y':
+        hangman()
+    else:
+        exit
+            
+
+hangman()
